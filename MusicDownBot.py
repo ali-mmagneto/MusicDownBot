@@ -1,4 +1,4 @@
-import os, youtube_dl, requests, time
+import os, youtube_dlp, requests, time
 from config import Config
 from youtube_search import YoutubeSearch
 from pyrogram.handlers import MessageHandler
@@ -93,7 +93,7 @@ def a(client, message):
         return
     m.edit("`Müziği buldum indiriyom.`")
     try:
-        with youtube_dl.YoutubeDL(ydl_opts) as ydl:
+        with youtube_dlp.YoutubeDLP(ydl_opts) as ydl:
             info_dict = ydl.extract_info(link, download=False)
             audio_file = ydl.prepare_filename(info_dict)
             ydl.process_info(info_dict)
