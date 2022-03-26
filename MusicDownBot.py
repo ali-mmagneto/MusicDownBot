@@ -49,15 +49,13 @@ def help(client, message):
         )
     )
 
-#alive mesaji#
 
-@bot.on_message(filters.command("alive") & filters.user(Config.BOT_OWNER))
+@app.on_message(filters.command("buradamisin") & filters.user(SUDO))
 async def live(client: Client, message: Message):
-    livemsg = await message.reply_text('`Mükəmməl İşləyirəm 😎`')
+    livemsg = await message.reply_text('`Canlıyım`')
     
-#musiqi əmri#
 
-@bot.on_message(filters.command('music'))
+@app.on_message(filters.command('music'))
 def a(client, message):
     query = ''
     for i in message.command[1:]:
