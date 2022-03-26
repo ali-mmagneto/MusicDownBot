@@ -31,8 +31,8 @@
             "value": "",
             "required": true
         },
-        "BOT_OWNER": {
-            "description": "Öz kullanıcı adınızı @ bu işarə olmadan yazın.",
+        "SUDO": {
+            "description": "TELEGRAM",
             "value": "",
             "required": true
         },
