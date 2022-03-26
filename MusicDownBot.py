@@ -1,4 +1,4 @@
-import os, git+https://github.com/yt-dlp/yt-dlp, requests, time
+import os, yt-dlp, requests, time
 from config import Config
 from youtube_search import YoutubeSearch
 from pyrogram.handlers import MessageHandler
@@ -93,7 +93,7 @@ def a(client, message):
         return
     m.edit("`Müziği buldum indiriyom.`")
     try:
-        with git+https://github.com/yt-dlp/yt-dlp:
+        with yt-dlp:
             info_dict = ydl.extract_info(link, download=False)
             audio_file = ydl.prepare_filename(info_dict)
             ydl.process_info(info_dict)
