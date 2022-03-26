@@ -11,7 +11,7 @@ from pyrogram.types import (
 
 
 bot = Client(
-    'DemonBot',
+    'MusicDownBot',
     bot_token = Config.BOT_TOKEN,
     api_id = Config.API_ID,
     api_hash = Config.API_HASH
