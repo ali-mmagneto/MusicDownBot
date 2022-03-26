@@ -102,9 +102,9 @@ def a(client, message):
         for i in range(len(dur_arr)-1, -1, -1):
             dur += (int(dur_arr[i]) * secmul)
             secmul *= 60
-        message.reply_audio(audio_file, caption=rep, parse_mode='md',quote=False, title=title, duration=dur, thumb=thumb_name, performer="@mmagneto3")
+        message.reply_audio(audio_file, caption=rep, parse_mode='md',quote=False, title=title, duration=dur, thumb=thumb_name, performer="@MusicDownBot")
         m.delete()
-        bot.send_audio(chat_id=Config.PLAYLIST_ID, audio=audio_file, caption=rep, performer="@mmagneto3", parse_mode='md', title=title, duration=dur, thumb=thumb_name)
+        bot.send_audio(chat_id=Config.PLAYLIST_ID, audio=audio_file, caption=rep, performer="@MusicDownBot", parse_mode='md', title=title, duration=dur, thumb=thumb_name)
     except Exception as e:
         m.edit('**Başaramadık abi**')
         print(e)
