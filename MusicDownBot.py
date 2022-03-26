@@ -51,7 +51,7 @@ def help(client, message):
     )
 
 @bot.on_message(filters.command('ban'))
-def ban(bot: Bot, update: Update, args: List[str]) -> str:
+def ban(client, message):
     chat = update.effective_chat  # type: Optional[Chat]
     user = update.effective_user  # type: Optional[User]
     message = update.effective_message  # type: Optional[Message]
