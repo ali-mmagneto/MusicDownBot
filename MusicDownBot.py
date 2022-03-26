@@ -18,7 +18,7 @@ bot = Client(
 )
 
 
-@app.on_message(filters.command('start'))
+@bot.on_message(filters.command('start'))
 def start(client, message):
         message.reply_text(
         text="Merhabalar \nBen Benden istediğin müzikleri Youtube aracılığıyla sana getiren bir botum.", 
@@ -34,7 +34,7 @@ def start(client, message):
     )
     
 
-@app.on_message(filters.command('help'))
+@bot.on_message(filters.command('help'))
 def help(client, message):
     message.reply_text(
         text="**Help Mesajı** \n`/music` komutu ile benden müzik isteyebilirsin. \nÖrnek: \n `/music bones` /n ayrıca müzik ismi yerine youtube linkide kullanabilirsin.", 
@@ -50,12 +50,12 @@ def help(client, message):
     )
 
 
-@app.on_message(filters.command("buradamisin") & filters.user(Config.SUDO))
+@bot.on_message(filters.command("buradamisin") & filters.user(Config.SUDO))
 async def live(client: Client, message: Message):
     livemsg = await message.reply_text('`Canlıyım`')
     
 
-@app.on_message(filters.command('music'))
+@bot.on_message(filters.command('music'))
 def a(client, message):
     query = ''
     for i in message.command[1:]:
