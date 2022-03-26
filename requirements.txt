@@ -1,6 +1,6 @@
 TgCrypto
 Pyrogram
-youtube-dl
+youtube-dlp
 youtube_search
 requests
 ffmpeg
