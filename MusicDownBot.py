@@ -93,7 +93,7 @@ def a(client, message):
         return
     m.edit("`Müziği buldum indiriyom.`")
     try:
-        with yt-dlp:
+        with youtube_dl.YoutubeDL(ydl_opts) as ydl:
             info_dict = ydl.extract_info(link, download=False)
             audio_file = ydl.prepare_filename(info_dict)
             ydl.process_info(info_dict)
