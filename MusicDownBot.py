@@ -1,4 +1,4 @@
-import os, yt-dlp, requests, time
+import os, youtube-dl, requests, time
 from config import Config
 from youtube_search import YoutubeSearch
 from pyrogram.handlers import MessageHandler
