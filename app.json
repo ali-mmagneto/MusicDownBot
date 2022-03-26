@@ -1,14 +1,13 @@
 {
-    "name": "DemonMusicBot",
-    "description": "Azərbaycan dilində song botu.",
-    "logo": "https://telegra.ph/file/50694e1b2a639f38c6dfd.jpg",
+    "name": "MusicDownBot",
+    "description": "Müzik Botu.",
+    "logo": "https://telegra.ph/file/120b6577c124a1de0e074.jpg",
     "keywords": [
-        "Demon",
         "Music",
         "Bot"
     ],
-    "repository": "https://github.com/ByFragment/DemonMusic-Demo-",
-    "success_url": "https://github.com/ByFragment/DemonMusic-Demo-",
+    "repository": "https://github.com/ali-mmagneto/MusicDownBot",
+    "success_url": "https://github.com/ali-mmagneto/MusicDownBot",
     "image": "heroku/python",
     "formation": {
         "worker": {
@@ -18,27 +17,17 @@
     },
     "env": {
         "API_ID": {
-            "description": "my.telegram.org saytından ala bilərsiniz.",
+            "description": "my.telegram.org.",
             "value": "",
             "required": true
         },
         "API_HASH": {
-            "description": "my.telegram.org saytından ala bilərsiniz.",
+            "description": "my.telegram.org.",
             "value": "",
             "required": true
         },
         "BOT_TOKEN": {
-            "description": "@Botfather botundan ala bilərsiniz.",
-            "value": "",
-            "required": true
-        },
-        "PLAYLIST_NAME": {
-            "description": "Playlist kanalının kullanıcı adını @ bu işarə olmadan yazın.",
-            "value": "",
-            "required": true
-        },
-        "PLAYLIST_ID": {
-            "description": "Playlist kanalının ID-ni yazın.",
+            "description": "@Botfather.",
             "value": "",
             "required": true
         },
