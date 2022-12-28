@@ -1,5 +1,5 @@
 TgCrypto
-Pyrogram
+pyrogram==1.4.16
 git+https://github.com/ytdl-org/youtube-dl
 youtube_search
 requests
