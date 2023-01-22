@@ -50,7 +50,7 @@ def help(client, message):
         )
     )
 
-@bot.on_message(filters.command("buradamisin") & filters.user(Config.SUDO))
+@bot.on_message(filters.command("buradamisin"))
 async def live(client, message):
     livemsg = await message.reply_text('`Canlıyım`')
     
