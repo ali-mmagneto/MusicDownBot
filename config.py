@@ -6,4 +6,4 @@ class Config:
     API_HASH = os.environ.get("API_HASH")
     SUDO = os.environ.get("SUDO")
     BOT_USERNAME = os.environ.get("BOT_USERNAME")
-    PLAYLIST_ID = int(os.environ.get("PLAYLIST_ID"))
+    PLAYLIST_ID = os.environ.get("PLAYLIST_ID")
